@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="m-0 p-0 overflow-x-hidden flex flex-col h-screen">
+    <nav class="bg-DarkGreen">
+        <div class="p-5  flex flex-row ml-5 items-center gap-2">
+            <div class="bg-white h-10 w-10 rounded flex justify-center items-center">
+                <i data-feather="check" class="text-black h-9 w-9"></i>
+            </div>
+            <p class="font-mulish font-bold text-5xl text-LimeGreen">TODO</p>
+        </div>
+    </nav>
+    <section class="bg-BrightGreen p-5 flex lg:justify-center justify-between items-center">
+        <!-- <div class="w-[60%] ml-20  bg-white h-15 rounded shadow-inner shadow-black"></div> -->
+        <input type="text" name="" id="textinput" class="lg:w-[60%] w-[90%] lg:ml-20 pl-4 bg-white h-15 rounded shadow-inner shadow-black font-mulish text-xl font-bold">
+        <button id="addbutton" class="bg-LimeGreen flex justify-center items-center lg:w-15 lg:h-15 h-10 w-10 ml-6 shadow-2xl rounded cursor-pointer">
+            <i data-feather="plus" class="lg:h-14 lg:w-14 h-9 w-9"></i>
+        </button>
+    </section>
+    <section class="bg-LightGreen flex-1 p-8">
+        <div class="lg:w-[60%] mx-auto flex flex-col gap-7" id="mainBox"></div>
+    </section>
+    <script>
+            feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: black;
+}
+.home{
+    /* background-color: antiquewhite; */
+    /* display: inline; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 5rem;
+    color: aliceblue;
+    margin-top: 3rem;
+    text-align: center;
+}
+.mainBox{
+    position: relative;
+}
+.subBox{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    /* align-items: center; */
+    margin-top: 2rem;
+    border: 1px solid aliceblue;
+    padding:  5rem ;
+}
+.text1{
+    color: #2CFF05;
+    font-size: 4rem;
+    text-shadow: 5px 5px 8px #0e6b0e;
+}
+@media screen and (max-width : 500px) {
+    .text1{
+        font-size: 2rem;
+    }
+    .home{
+        font-size: 45px;
+        /* padding: px; */
+        text-align: center;
+        width: 100vw;
+    }
+    .subBox{
+        padding: 2rem;
+    }
+}

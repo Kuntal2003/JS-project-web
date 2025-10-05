@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import "tailwindcss-animated";
+@theme{
+    --font-retro : "Press Start 2P", system-ui;
+    --font-new : "Edu NSW ACT Cursive", cursive;
+    --font-mulish : "Mulish", sans-serif;
+}
